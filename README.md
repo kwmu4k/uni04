@@ -8,7 +8,7 @@ uni04 (or uni.4) is a 4-bit architecture made for [Alex's 4-bit arch challenge](
 | 0        | imm         | reg con       |              |
 | 1        | lda         | adr           |              |
 | 2        | ldb         | adr           |              |
-| 3        | ldi         | reg adr reg   |              |
+| 3        | ldi         | reg adr reg   | <img src="scrunkly.jpg" width="300" height="20"> |
 | 4        | sta         | adr           |              |
 | 5        | stb         | adr           |              |
 | 6        | mov         | reg reg       |              |
