@@ -19,7 +19,7 @@ uni04 (or uni.4) is a 4-bit architecture made for [Alex's 4-bit arch challenge](
 | B        | nor         | reg con       |              |
 | C        | jmp         | adr           |              |
 | D        | jmz         | adr           |              |
-| E        | cal         | adr           |              |
+| E        | cal         | adr           | <img src="niki.png" width="300" height="20"> |
 | F        | ret         |               |              |
 
 ### ASM syntax example
