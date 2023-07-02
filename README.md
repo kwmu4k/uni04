@@ -7,10 +7,10 @@ uni04 (or uni.4) is a 4-bit architecture made for [Alex's 4-bit arch challenge](
 | -------- | ----------- | ------------- | ------------ |
 | 0        | imm         | reg con       |              |
 | 1        | lda         | adr           |              |
-| 2        | ldb         | adr           |              |
+| 2        | ldx         | adr           |              |
 | 3        | ldi         | reg adr reg   | <img src="scrunkly.jpg" width="300" height="20"> |
 | 4        | sta         | adr           |              |
-| 5        | stb         | adr           |              |
+| 5        | stx         | adr           |              |
 | 6        | mov         | reg reg       |              |
 | 7        | add         | reg reg       | arg1 += arg2 |
 | 8        | sub         | reg reg       | arg1 -= arg2 |
@@ -25,9 +25,9 @@ uni04 (or uni.4) is a 4-bit architecture made for [Alex's 4-bit arch challenge](
 ### ASM syntax example
 
 ```
-mov a b    // Hmmm comment
+mov a x    // Hmmm comment
 lda 7      // meow :3
-ldi b 21 a
+ldi x 21 a
 ```
 
 As you can see instead of `;` you use `//` and there are no `,` unlike most ASMs
@@ -39,9 +39,9 @@ As you can see instead of `;` you use `//` and there are no `,` unlike most ASMs
 | | |
 |-|-|
 |a|0|
-|b|1|
+|x|1|
 
-`mov a b` = `6 0 1`
+`mov a x` = `6 0 1`
 
 `imm a 8` = `0 0 8`
 
@@ -61,4 +61,4 @@ As you can see instead of `;` you use `//` and there are no `,` unlike most ASMs
 |-|-|
 |#|#|
 
-`nor b 1` = `B 1 1`
+`nor x 1` = `B 1 1`
