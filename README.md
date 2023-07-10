@@ -47,9 +47,9 @@ As you can see instead of `;` you use `//` and there are no `,` unlike most ASMs
 
 #### Addreses
 
-|  |  |
-|--|--|
-|##|##|
+|   |   |
+|---|---|
+|adr|## |
 
 `lda 16` = `1 0F`
 
@@ -57,8 +57,8 @@ As you can see instead of `;` you use `//` and there are no `,` unlike most ASMs
 
 #### Constants
 
-| | |
-|-|-|
-|#|#|
+|   |   |
+|---|---|
+|con|#  |
 
 `nor x 1` = `B 1 1`
