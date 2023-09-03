@@ -41,19 +41,19 @@ As you can see instead of `;` you use `//` and there is no `,` unlike most ASMs
 |a|0|
 |x|1|
 
-`mov a x` = `6 0 1`
+`mov a x` = `06 00 01`
 
-`imm a 8` = `0 0 8`
+`imm a 8` = `00 00 08`
 
-#### Addreses
+#### Addreses (8-bit)
 
 |   |   |
 |---|---|
 |adr|## |
 
-`lda 16` = `1 0F`
+`lda 16` = `01 0F`
 
-`jmz 27` = `D 1B`
+`jmz 27` = `0D 1B`
 
 #### Constants
 
@@ -61,4 +61,4 @@ As you can see instead of `;` you use `//` and there is no `,` unlike most ASMs
 |---|---|
 |con|#  |
 
-`nor x 1` = `B 1 1`
+`nor x 1` = `0B 01 01`
