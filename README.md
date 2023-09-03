@@ -30,7 +30,7 @@ lda 7      // meow :3
 ldi x 21 a
 ```
 
-As you can see instead of `;` you use `//` and there are no `,` unlike most ASMs
+As you can see instead of `;` you use `//` and there is no `,` unlike most ASMs
 
 ### How types in bytecode are encoded
 
