@@ -32,7 +32,7 @@ ldi x 21 a
 
 As you can see instead of `;` you use `//` and there is no `,` unlike most ASMs
 
-### How types in bytecode are encoded
+### Turning into opcode
 
 #### Registers
 
