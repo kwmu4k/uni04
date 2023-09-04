@@ -6,11 +6,11 @@ uni04 (or uni.4) is a 4-bit architecture made for [Alex's 4-bit arch challenge](
 | Bytecode | Instruction | Arguments     | Behaviour    |
 | -------- | ----------- | ------------- | ------------ |
 | 0        | imm         | reg con       |              |
-| 1        | lda         | adr           |              |
-| 2        | ldx         | adr           |              |
+| 1        | ldx         | adr           |              |
+| 2        | ldy         | adr           |              |
 | 3        | ldi         | reg adr reg   | <img src="scrunkly.jpg" width="300" height="20"> |
-| 4        | sta         | adr           |              |
-| 5        | stx         | adr           |              |
+| 4        | stx         | adr           |              |
+| 5        | sty         | adr           |              |
 | 6        | mov         | reg reg       |              |
 | 7        | add         | reg reg       | arg1 += arg2 |
 | 8        | sub         | reg reg       | arg1 -= arg2 |
@@ -25,8 +25,8 @@ uni04 (or uni.4) is a 4-bit architecture made for [Alex's 4-bit arch challenge](
 ### ASM syntax example
 
 ```
-mov a x    // Hmmm comment
-lda 7      // meow :3
+mov x y    // Hmmm comment
+ldx 7      // meow :3
 ldi x 21 a
 ```
 
@@ -38,12 +38,12 @@ As you can see instead of `;` you use `//` and there is no `,` unlike most ASMs
 
 | | |
 |-|-|
-|a|0|
-|x|1|
+|x|0|
+|y|1|
 
-`mov a x` = `06 00 01`
+`mov x y` = `06 00 01`
 
-`imm a 8` = `00 00 08`
+`imm x 8` = `00 00 08`
 
 #### Addreses (8-bit)
 
@@ -51,7 +51,7 @@ As you can see instead of `;` you use `//` and there is no `,` unlike most ASMs
 |---|---|
 |adr|## |
 
-`lda 16` = `01 0F`
+`ldx 16` = `01 0F`
 
 `jmz 27` = `0D 1B`
 
