@@ -2,6 +2,8 @@
 
 uni04 (or uni.4) is a 4-bit architecture made for [Alex's 4-bit arch challenge](http://207.180.202.42/common/events/4bit-1.html)
 
+There are 2 registers, X (accumulator), and Y
+
 ```
   v ALU
 ┌──┬─┐
